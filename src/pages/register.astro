@@ -1,0 +1,25 @@
+---
+import "../styles/styles.css"
+import Layout from "../Layout/Layout.astro";
+import 'animate.css';
+---
+<Layout>
+
+   <div class=" animate__animated animate__bounceInUp flex flex-row-reverse justify-evenly h-screen items-center">
+    <div> <img class="w-72 h-80" src="../../public/NESTr.png"> </div>
+    <form class="flex flex-col items-center mt-20 ">
+        <label class="text-xl font-bold pb-1" >Enter Your Username</label>
+        <input class="text-cyan-500 outline-none rounded-2xl w-72 h-10 pl-2 mb-1 hover:bg-slate-200 focus:bg-slate-200"  required>
+        <label class="text-xl font-bold pb-1">Enter Your Email</label>
+        <input class="text-cyan-500 outline-none rounded-2xl w-72 h-10 pl-2 mb-1 hover:bg-slate-200 focus:bg-slate-200"  type="email"  required>
+        <label class="text-xl font-bold pb-1">Enter Your Password</label>
+        <input class="text-cyan-500 outline-none rounded-2xl w-72 h-10 pl-2 mb-1 hover:bg-slate-200 focus:bg-slate-200"   type="password"  required>
+        <label class="text-xl font-bold pb-1">Confirm The Password</label>
+        <input class="text-cyan-500 outline-none rounded-2xl w-72 h-10 pl-2 mb-1 hover:bg-slate-200 focus:bg-slate-200"   type="password"  required>
+        <input class="mt-7 pb-2 text-2xl border-2 border-white w-52 h-10 hover:bg-slate-300 
+        rounded-xl hover:text-cyan-500 cursor-pointer" type="submit" value="Register"> 
+        <p class="text-xl font-bold mt-5">Do you already have an account?</p> 
+        <a class="font-semibold mt-1 pb-2 text-2xl  hover:text-cyan-500 cursor-pointer" href="login">Login</a>
+    </form>
+</div>    
+</Layout>
